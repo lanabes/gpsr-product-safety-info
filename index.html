@@ -268,6 +268,21 @@
     .clause { grid-template-columns: minmax(0, 1fr); gap: 8px; }
     .shop-head { gap: 14px; }
     .shop-thumb { width: 64px; height: 64px; }
+    /* En una pantalla estrecha el menú se partía en dos líneas. Se queda
+       lo único que hace falta ahí: instalarla. El resto está a un scroll. */
+    .navlinks a { display: none; }
+    .navlinks a:last-child {
+      display: inline-block; color: var(--ink); font-weight: 600;
+      border-bottom-color: var(--line-2); white-space: nowrap;
+    }
+    /* Marca e instalar, en una sola línea. El nombre completo no cabía. */
+    .top .wrap { flex-wrap: nowrap; gap: 12px; min-height: 58px; }
+    .brand { min-width: 0; }
+    .brand b { font-size: 14.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .brand svg { width: 24px; height: 24px; }
+    .navlinks { flex: none; }
+    /* La tabla de la política se salía de la pantalla en móviles estrechos. */
+    table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   }
 
   /* ---------------------------------------------------------------
