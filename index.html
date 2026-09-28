@@ -1,4 +1,13 @@
-<title>GPSR Product Safety Info</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GPSR Product Safety Info — la información de seguridad del artículo 19 en cada ficha de producto de Wix</title>
+<meta name="description" content="App de Wix que muestra en cada ficha de producto lo que exige el Reglamento (UE) 2023/988: fabricante, persona responsable en la UE, identificación del producto y advertencias. 14 días de prueba.">
+<link rel="canonical" href="https://lanabes.github.io/gpsr-product-safety-info/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GPSR Product Safety Info — una app de Wix">
+<meta property="og:description" content="Lo que el artículo 19 exige en cada oferta online, puesto donde el comprador lo ve. Para tiendas Wix.">
+<meta property="og:url" content="https://lanabes.github.io/gpsr-product-safety-info/">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -126,6 +135,22 @@
     border: 1px solid var(--line-2); border-radius: 999px; padding: 7px 16px;
   }
   .status i { width: 7px; height: 7px; border-radius: 50%; background: var(--ink-sub); flex: none; }
+
+  /* La llamada a la acción: hasta hoy la página no tenía ninguna. */
+  .actions { display: flex; align-items: center; gap: 18px; margin-top: 32px; flex-wrap: wrap; }
+  .install {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 16px; font-weight: 600; text-decoration: none;
+    color: var(--card); background: var(--ink);
+    border: 1px solid var(--ink); border-radius: 10px; padding: 14px 24px;
+    transition: transform .18s cubic-bezier(.4,0,.2,1), box-shadow .18s ease;
+  }
+  .install:hover { transform: translateY(-1px); box-shadow: 0 10px 26px -10px rgba(31,68,54,.55); }
+  .install:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+  .install svg { width: 15px; height: 15px; flex: none; opacity: .85; }
+  .trial { font-size: 14.5px; color: var(--muted); }
+  .trial b { color: var(--text); font-weight: 600; }
+  @media (prefers-reduced-motion: reduce) { .install { transition: none; } .install:hover { transform: none; } }
 
   /* ---------- the live shop demo ---------- */
   .demo { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
@@ -286,6 +311,7 @@
       <a href="#what">What it does</a>
       <a href="#support">Support</a>
       <a href="#privacy">Privacy</a>
+      <a href="https://www.wix.com/app-market/rubypao7-gpsr-product-safety-info" target="_blank" rel="noopener">Get the app</a>
     </nav>
   </div>
 </header>
@@ -302,7 +328,13 @@
           appears on the product page in your shop's own type, in the language the buyer
           is reading.
         </p>
-        <p class="status"><i></i> Coming soon to the Wix App Market</p>
+        <div class="actions">
+          <a class="install" href="https://www.wix.com/app-market/rubypao7-gpsr-product-safety-info" target="_blank" rel="noopener">
+            Get it on the Wix App Market
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+          </a>
+          <span class="trial"><b>14 days free</b>, then $4.99 a month</span>
+        </div>
       </div>
 
       <div class="demo">
