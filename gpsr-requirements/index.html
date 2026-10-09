@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GPSR requirements for online shops (2026): what every product page must show</title>
+<meta name="description" content="A plain-English guide to the GPSR (Regulation (EU) 2023/988) for online sellers: the four things every product page must show, the EU responsible person, labelling, traceability and language requirements, with the article for each.">
+<link rel="canonical" href="https://lanabes.github.io/gpsr-product-safety-info/gpsr-requirements/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GPSR requirements for online shops: what every product page must show">
+<meta property="og:description" content="The four things Article 19 asks of every online offer, the EU responsible person, labelling and language rules — each with its article.">
+<meta property="og:url" content="https://lanabes.github.io/gpsr-product-safety-info/gpsr-requirements/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "GPSR requirements for online shops: what every product page must show", "inLanguage": "en", "datePublished": "2026-10-09", "dateModified": "2026-10-09", "mainEntityOfPage": "https://lanabes.github.io/gpsr-product-safety-info/gpsr-requirements/", "author": {"@type": "Person", "name": "Rubén Blánquez"}, "about": "Regulation (EU) 2023/988, General Product Safety Regulation"}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the GPSR?", "acceptedAnswer": {"@type": "Answer", "text": "The General Product Safety Regulation, Regulation (EU) 2023/988. It sets the basic safety rules for consumer products sold in the EU, new or used, online or offline, and it has applied since 13 December 2024 (Article 52). It replaced the old General Product Safety Directive 2001/95/EC."}}, {"@type": "Question", "name": "Do I need an EU responsible person?", "acceptedAnswer": {"@type": "Answer", "text": "Every product covered by the GPSR needs an economic operator established in the EU who is responsible for it (Article 16(1)). If the manufacturer is established in the EU, that is normally the manufacturer itself. Your product page only has to show a separate responsible person when the manufacturer is not established in the EU (Article 19(b))."}}, {"@type": "Question", "name": "Does the GPSR apply to handmade products?", "acceptedAnswer": {"@type": "Answer", "text": "The Regulation defines a manufacturer as anyone who makes a product, or has it made, and markets it under their own name or trademark (Article 3(8)). If you make what you sell, you are its manufacturer, and the manufacturer obligations apply to you."}}, {"@type": "Question", "name": "Does it apply to second-hand products?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It applies to products whether new, used, repaired or reconditioned (Article 2(3)). Antiques are excluded (Article 2(2)(i))."}}, {"@type": "Question", "name": "What exactly must an online product page show?", "acceptedAnswer": {"@type": "Answer", "text": "Four things, clearly and visibly (Article 19): the manufacturer's name and postal and electronic address; the EU responsible person if the manufacturer is outside the EU; information to identify the product, including a picture, its type and any other identifier; and any warnings or safety information, in a language consumers easily understand."}}, {"@type": "Question", "name": "What are the GPSR labelling requirements?", "acceptedAnswer": {"@type": "Answer", "text": "The product must carry a type, batch or serial number or another identifying element (Article 9(5)), and the manufacturer's name, registered trade name or trademark and postal and electronic address (Article 9(6)). If that is not possible on the product, it goes on the packaging or in an accompanying document. Importers add their own details too (Article 11(3))."}}, {"@type": "Question", "name": "What are the GPSR language requirements?", "acceptedAnswer": {"@type": "Answer", "text": "Instructions and safety information must be in a language consumers can easily understand, as decided by the Member State where the product is sold (Article 9(7)). The same applies to the warnings shown in an online offer (Article 19(d))."}}, {"@type": "Question", "name": "What are the penalties?", "acceptedAnswer": {"@type": "Answer", "text": "Each Member State sets its own penalties, which must be effective, proportionate and dissuasive (Article 44). Check the rules of the countries you sell to."}}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "GPSR Product Safety Info", "item": "https://lanabes.github.io/gpsr-product-safety-info/"}, {"@type": "ListItem", "position": 2, "name": "GPSR requirements", "item": "https://lanabes.github.io/gpsr-product-safety-info/gpsr-requirements/"}]}]</script>
+<style>
+  /* ---------------------------------------------------------------
+     The palette is the app's own icon: a dark forest-green square
+     with a cream tag. Nothing here was invented for the website.
+     The only red on the page lives inside the hazard pictograms,
+     where Regulation 1272/2008 fixes it — it is never a UI accent.
+     --------------------------------------------------------------- */
+  :root {
+    --paper:   #F7F3EA;
+    --card:    #FFFDF8;
+    --sunk:    #F1EBDD;
+    --ink:     #1F4436;
+    --ink-sub: #3D6552;
+    --text:    #17201B;
+    --muted:   #5F6D66;
+    --line:    rgba(31, 68, 54, .15);
+    --line-2:  rgba(31, 68, 54, .30);
+    --pending-bg:   #F6EBD2;
+    --pending-ink:  #7A5713;
+    --shadow:  0 1px 2px rgba(31,68,54,.05), 0 18px 40px -22px rgba(31,68,54,.30);
+    --radius:  14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper:   #121815;
+      --card:    #1A211D;
+      --sunk:    #161D19;
+      --ink:     #A6CFB7;
+      --ink-sub: #8FBCA3;
+      --text:    #E7EAE6;
+      --muted:   #97A79E;
+      --line:    rgba(166, 207, 183, .16);
+      --line-2:  rgba(166, 207, 183, .30);
+      --pending-bg:  #33291320;
+      --pending-ink: #D9B778;
+      --shadow:  0 1px 2px rgba(0,0,0,.4), 0 18px 40px -22px rgba(0,0,0,.7);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper:   #121815;
+    --card:    #1A211D;
+    --sunk:    #161D19;
+    --ink:     #A6CFB7;
+    --ink-sub: #8FBCA3;
+    --text:    #E7EAE6;
+    --muted:   #97A79E;
+    --line:    rgba(166, 207, 183, .16);
+    --line-2:  rgba(166, 207, 183, .30);
+    --pending-bg:  #33291320;
+    --pending-ink: #D9B778;
+    --shadow:  0 1px 2px rgba(0,0,0,.4), 0 18px 40px -22px rgba(0,0,0,.7);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--text);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; }
+
+  /* ---------- header ---------- */
+  .top {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 20;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .top .wrap {
+    display: flex; align-items: center; gap: 20px;
+    min-height: 64px; flex-wrap: wrap;
+  }
+  .brand { display: flex; align-items: center; gap: 11px; margin-right: auto; }
+  .brand svg { width: 28px; height: 28px; border-radius: 6px; display: block; flex: none; }
+  .brand b { font-weight: 600; font-size: 16px; letter-spacing: -.01em; }
+  .navlinks { display: flex; gap: 22px; }
+  .navlinks a {
+    color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 500;
+    padding: 4px 0; border-bottom: 1px solid transparent;
+  }
+  .navlinks a:hover { color: var(--ink); border-bottom-color: var(--line-2); }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 3px;
+  }
+
+  /* ---------- type ---------- */
+  .eyebrow {
+    font-size: 13px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase;
+    color: var(--ink-sub); margin: 0 0 18px;
+  }
+  h1, h2, h3 {
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    color: var(--ink); margin: 0; text-wrap: balance; letter-spacing: -.012em;
+  }
+  h1 { font-size: clamp(34px, 5.2vw, 52px); line-height: 1.1; font-weight: 600; }
+  h2 { font-size: clamp(26px, 3.4vw, 34px); line-height: 1.18; font-weight: 600; }
+  h3 { font-size: 20px; line-height: 1.3; font-weight: 600; }
+  p  { margin: 0; }
+  .lede { font-size: clamp(17px, 2vw, 20px); color: var(--muted); margin-top: 20px; max-width: 34em; }
+
+  section { padding-block: clamp(56px, 8vw, 96px); }
+  section + section { border-top: 1px solid var(--line); }
+
+  
+footer { border-top: 1px solid var(--line); padding-block: 40px 56px; }
+  footer .wrap { display: flex; gap: 18px; flex-wrap: wrap; align-items: baseline; }
+  footer p { font-size: 14px; color: var(--muted); max-width: 46em; }
+
+  /* ---------- guide ---------- */
+  .guide { padding-block: clamp(40px, 6vw, 72px); }
+  .guide .wrap { max-width: 760px; }
+  .guide h1 { margin-top: 6px; }
+  .meta { margin-top: 18px; font-size: 14px; color: var(--muted); }
+  .toc { margin: 36px 0 8px; padding: 20px 24px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .toc p { font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-sub); margin-bottom: 10px; }
+  .toc ol { margin: 0; padding-left: 20px; columns: 2 260px; column-gap: 32px; }
+  .toc li { margin: 4px 0; break-inside: avoid; }
+  .toc a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--line-2); }
+  .toc a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+  .guide h2 { margin-top: 64px; scroll-margin-top: 90px; }
+  .guide h3 { margin-top: 28px; }
+  .guide p, .guide ul, .guide ol { margin-top: 14px; }
+  .guide ul, .guide ol { padding-left: 22px; }
+  .guide li { margin: 6px 0; }
+  .guide a { color: var(--ink); }
+  .law { margin-top: 18px; padding: 16px 20px; border-left: 3px solid var(--ink); background: var(--sunk); border-radius: 0 10px 10px 0; font-family: "Newsreader", Georgia, serif; font-size: 17.5px; }
+  .law cite { display: block; margin-top: 8px; font-family: Inter, sans-serif; font-style: normal; font-size: 13px; color: var(--muted); }
+  .table-wrap { margin-top: 18px; overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15.5px; }
+  th, td { text-align: left; vertical-align: top; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+  th { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-sub); background: var(--sunk); }
+  tr:last-child td { border-bottom: 0; }
+  .note { margin-top: 18px; padding: 14px 18px; border-radius: 10px; background: var(--pending-bg); color: var(--pending-ink); font-size: 15px; }
+  details { margin-top: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+  summary { cursor: pointer; padding: 14px 18px; font-weight: 600; color: var(--ink); list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; color: var(--muted); font-weight: 400; }
+  details[open] summary::after { content: "–"; }
+  summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 12px; }
+  details > div { padding: 0 18px 16px; }
+  details > div p:first-child { margin-top: 0; }
+  .cta { margin-top: 64px; padding: clamp(24px, 4vw, 36px); border-radius: var(--radius); background: var(--ink); color: var(--card); }
+  .cta h2 { color: var(--card); margin: 0; }
+  .cta p { margin-top: 12px; color: color-mix(in srgb, var(--card) 82%, transparent); }
+  .cta .install { margin-top: 22px; background: var(--card); color: var(--ink); border-color: var(--card); }
+  .back { display: inline-block; margin-top: 8px; font-size: 14px; color: var(--muted); text-decoration: none; }
+  .back:hover { color: var(--ink); }
+  @media (max-width: 560px) { .navlinks { gap: 14px; } .navlinks a { font-size: 14px; } body { font-size: 16.5px; } }
+
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a href="../" style="text-decoration:none;color:inherit;margin-right:auto"><span class="brand" style="margin-right:0">
+      <svg viewBox="0 0 36 36" aria-hidden="true">
+        <rect width="36" height="36" rx="4" fill="#1F4436"/>
+        <path d="M15.8 6.3h4.4q.5 0 .8.41l5.6 8q.41.59.41 1.31v12.08q0 1.62-1.62 1.62H10.61q-1.62 0-1.62-1.62V16.02q0-.72.41-1.31l5.6-8q.29-.41.8-.41Z" fill="#F2EBDC"/>
+        <circle cx="18" cy="8.55" r="1.35" fill="#1F4436"/>
+        <rect x="12.6" y="18" width="10.8" height="2.7" rx="1.35" fill="#1F4436"/>
+        <rect x="12.6" y="23.4" width="6.3" height="2.7" rx="1.35" fill="#1F4436"/>
+      </svg>
+      <b>GPSR Product Safety Info</b>
+    </span></a>
+    <nav class="navlinks" aria-label="Main">
+      <a href="../">The app</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://www.wix.com/app-market/rubypao7-gpsr-product-safety-info" target="_blank" rel="noopener">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main class="guide">
+  <article class="wrap">
+    <p class="eyebrow">Guide · Regulation (EU) 2023/988</p>
+    <h1>GPSR requirements for online shops: what every product page must show</h1>
+    <p class="lede">The General Product Safety Regulation has applied since 13 December 2024. If you sell
+      consumer products online in the EU, this is what it asks of you, in plain English, with the
+      article behind each point.</p>
+    <p class="meta">Updated 9 October 2026 · Checked against the official text on EUR-Lex · Not legal advice</p>
+
+    <nav class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#who">Who the GPSR applies to</a></li>
+        <li><a href="#page">The four things on every product page</a></li>
+        <li><a href="#responsible">The EU responsible person</a></li>
+        <li><a href="#labelling">Labelling and traceability</a></li>
+        <li><a href="#language">Language requirements</a></li>
+        <li><a href="#documents">Risk analysis and documentation</a></li>
+        <li><a href="#accidents">Accidents and dangerous products</a></li>
+        <li><a href="#checklist">Checklist for your shop</a></li>
+        <li><a href="#faq">Frequently asked questions</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="who">1. Who the GPSR applies to</h2>
+    <p>It covers any product intended for consumers, or likely to be used by them, sold or supplied in the
+      EU — <strong>new, used, repaired or reconditioned</strong> (Article 2(3)). It applies to everyone in
+      the chain: manufacturers, importers, distributors, fulfilment service providers and online
+      marketplaces.</p>
+    <p>If you make what you sell, you are the <strong>manufacturer</strong>: the Regulation calls a
+      manufacturer anyone who makes a product, or has it made, and markets it under their own name or
+      trademark (Article 3(8)). If you resell products made by others, you are a
+      <strong>distributor</strong>, and you must check that the manufacturer did its part before selling
+      (Article 12(1)).</p>
+    <p>Out of scope (Article 2(2)): medicines, food, feed, living plants and animals, animal by-products,
+      plant protection products, some transport equipment, aircraft and <strong>antiques</strong>. Products
+      with their own EU safety law (toys, electrical equipment…) follow that law first; the GPSR fills
+      the gaps (Article 2(1)).</p>
+
+    <h2 id="page">2. The four things on every product page</h2>
+    <p>This is the part that changes your shop. When you sell online, Article 19 says the offer must
+      show, <strong>clearly and visibly</strong>, at least:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>What</th><th>In practice</th><th>Article</th></tr></thead>
+        <tbody>
+          <tr><td>Manufacturer</td><td>Name, registered trade name or trademark, postal address and e-mail or web address</td><td>19(a)</td></tr>
+          <tr><td>EU responsible person</td><td>Name, postal and electronic address — only when the manufacturer is <strong>not</strong> established in the EU</td><td>19(b)</td></tr>
+          <tr><td>Product identification</td><td>A picture, the type, and any other identifier (model, batch, EAN…)</td><td>19(c)</td></tr>
+          <tr><td>Warnings and safety information</td><td>Whatever must go on the product, packaging or leaflet, in a language buyers easily understand</td><td>19(d)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <blockquote class="law">“…the offer of those products shall clearly and visibly indicate at least the following information…”
+      <cite>Regulation (EU) 2023/988, Article 19</cite></blockquote>
+    <p>A link to a PDF or a line in the terms and conditions does not show it <em>on the offer</em>. The safe
+      reading is: put it on each product page, where the buyer decides.</p>
+
+    <h2 id="responsible">3. The EU responsible person</h2>
+    <p>A product covered by the GPSR <strong>cannot be placed on the EU market</strong> unless an economic
+      operator established in the EU is responsible for it (Article 16(1)). That person keeps the
+      documentation available, cooperates with the authorities and, where appropriate, checks that the
+      product matches its technical documentation and labelling (Article 16(2)).</p>
+    <ul>
+      <li><strong>Manufacturer in the EU:</strong> it is normally the responsible person itself. Your page shows
+        the manufacturer (19(a)); no separate entry is needed.</li>
+      <li><strong>Manufacturer outside the EU:</strong> someone in the EU must take the role — the importer, an
+        authorised representative or a fulfilment service provider — and your page shows them too (19(b)).</li>
+    </ul>
+
+    <h2 id="labelling">4. Labelling and traceability requirements</h2>
+    <p>On the physical product, the manufacturer must make sure of two things:</p>
+    <ul>
+      <li>A <strong>type, batch or serial number</strong>, or another element that identifies the product, easy
+        for consumers to see and read (Article 9(5)).</li>
+      <li>The manufacturer’s <strong>name, registered trade name or trademark, and postal and electronic
+        address</strong> (Article 9(6)).</li>
+    </ul>
+    <p>If the product is too small or its nature does not allow it, the information goes on the
+      <strong>packaging</strong> or in a <strong>document accompanying the product</strong>. Importers add their own
+      name and address in the same way, without covering the manufacturer’s label (Article 11(3)).</p>
+
+    <h2 id="language">5. Language requirements</h2>
+    <p>Instructions and safety information must be in a language consumers can easily understand,
+      <strong>as decided by each Member State</strong> where the product is sold (Article 9(7)). The warnings in
+      your online offer follow the same rule (Article 19(d)). Selling to France and Germany usually means
+      French and German.</p>
+    <p class="note">Products that can be used safely without instructions don’t need them (Article 9(7)).
+      Don’t invent warnings that don’t apply: show the ones your product actually carries.</p>
+
+    <h2 id="documents">6. Risk analysis and documentation</h2>
+    <p>Before placing a product on the market, the manufacturer carries out an <strong>internal risk
+      analysis</strong> and draws up <strong>technical documentation</strong> with, at least, a general description of the
+      product and its safety-relevant characteristics (Article 9(2)). It must be kept up to date and
+      available to the authorities for <strong>10 years</strong> (Article 9(3)).</p>
+
+    <h2 id="accidents">7. Accidents and dangerous products</h2>
+    <p>If a manufacturer learns that a product may be dangerous, it must act immediately: correct it,
+      withdraw or recall it, inform consumers and notify the authorities through the
+      <strong>Safety Business Gateway</strong> (Article 9(8)). Accidents caused by a product must be notified there
+      too, without undue delay (Article 20). Penalties are set by each Member State (Article 44).</p>
+
+    <h2 id="checklist">8. Checklist for your online shop</h2>
+    <ol>
+      <li>Know your role for each product: manufacturer, importer or distributor.</li>
+      <li>Make sure there is an EU responsible person for every product.</li>
+      <li>On every product page: manufacturer, EU responsible person if needed, product identification
+        with picture and type, and the warnings.</li>
+      <li>Warnings in the language of each country you sell to.</li>
+      <li>Type, batch or serial number on the product or its packaging.</li>
+      <li>Manufacturer’s name and addresses on the product, packaging or leaflet.</li>
+      <li>Keep the risk analysis and technical documentation for 10 years (if you are the manufacturer).</li>
+      <li>Know how to report through the Safety Business Gateway.</li>
+    </ol>
+
+    <h2 id="faq">9. Frequently asked questions</h2>
+    <details><summary>What is the GPSR?</summary><div><p>The General Product Safety Regulation, Regulation (EU) 2023/988. It sets the basic safety rules for consumer products sold in the EU, new or used, online or offline, and it has applied since 13 December 2024 (Article 52). It replaced the old General Product Safety Directive 2001/95/EC.</p></div></details>
+<details><summary>Do I need an EU responsible person?</summary><div><p>Every product covered by the GPSR needs an economic operator established in the EU who is responsible for it (Article 16(1)). If the manufacturer is established in the EU, that is normally the manufacturer itself. Your product page only has to show a separate responsible person when the manufacturer is not established in the EU (Article 19(b)).</p></div></details>
+<details><summary>Does the GPSR apply to handmade products?</summary><div><p>The Regulation defines a manufacturer as anyone who makes a product, or has it made, and markets it under their own name or trademark (Article 3(8)). If you make what you sell, you are its manufacturer, and the manufacturer obligations apply to you.</p></div></details>
+<details><summary>Does it apply to second-hand products?</summary><div><p>Yes. It applies to products whether new, used, repaired or reconditioned (Article 2(3)). Antiques are excluded (Article 2(2)(i)).</p></div></details>
+<details><summary>What exactly must an online product page show?</summary><div><p>Four things, clearly and visibly (Article 19): the manufacturer's name and postal and electronic address; the EU responsible person if the manufacturer is outside the EU; information to identify the product, including a picture, its type and any other identifier; and any warnings or safety information, in a language consumers easily understand.</p></div></details>
+<details><summary>What are the GPSR labelling requirements?</summary><div><p>The product must carry a type, batch or serial number or another identifying element (Article 9(5)), and the manufacturer's name, registered trade name or trademark and postal and electronic address (Article 9(6)). If that is not possible on the product, it goes on the packaging or in an accompanying document. Importers add their own details too (Article 11(3)).</p></div></details>
+<details><summary>What are the GPSR language requirements?</summary><div><p>Instructions and safety information must be in a language consumers can easily understand, as decided by the Member State where the product is sold (Article 9(7)). The same applies to the warnings shown in an online offer (Article 19(d)).</p></div></details>
+<details><summary>What are the penalties?</summary><div><p>Each Member State sets its own penalties, which must be effective, proportionate and dissuasive (Article 44). Check the rules of the countries you sell to.</p></div></details>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <h2 id="cta-title">Selling on Wix?</h2>
+      <p>GPSR Product Safety Info puts the four Article 19 items on every product page of your Wix store:
+        manufacturer and EU responsible person entered once for the whole catalogue, warnings and hazard
+        pictograms per product, in your shop’s own type and in the buyer’s language.</p>
+      <a class="install" href="https://www.wix.com/app-market/rubypao7-gpsr-product-safety-info" target="_blank" rel="noopener">See it on the Wix App Market
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+    </section>
+    <a class="back" href="../">← Back to GPSR Product Safety Info</a>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>This guide summarises <a href="https://eur-lex.europa.eu/eli/reg/2023/988/oj" target="_blank" rel="noopener">Regulation (EU) 2023/988</a> as published on
+      EUR-Lex. It is general information, not legal advice: check your own case and the national rules of
+      the countries you sell to.</p>
+  </div>
+</footer>
+</body>
+</html>
